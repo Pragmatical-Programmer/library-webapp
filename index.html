@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibraSoft</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./scripts.js" defer></script>
+  </head>
+  <body>
+    <h1>LibraSoft</h1>
+    <form action="">
+      <label for="title">Book Title</label>
+      <input type="text" name="title" id="title" required />
+      <label for="author">Author</label>
+      <input type="text" name="author" id="author" required />
+      <label for="pages">Amount of Pages</label>
+      <input type="number" name="pages" id="pages" required />
+      <select name="hasRead" id="hasRead">
+        <option value="not read yet">Not Read Yet</option>
+        <option value="has read already">Has Read Aldready</option>
+      </select>
+      <button id="dataSubmitButton" type="submit">Submit</button>
+    </form>
+    <table id="bookTable">
+      <thead>
+        <tr>
+          <th>Book Title</th>
+          <th>Author</th>
+          <th>Pages<br /></th>
+          <th>Has Read</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="bookTableBody"></tbody>
+    </table>
+  </body>
+</html>
